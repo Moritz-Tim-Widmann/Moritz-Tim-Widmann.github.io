@@ -14,6 +14,65 @@
         <li><a href="https://imsnoten.ch/">Notenportal von Eddie</a></li>
         <li><a href="/Stundenplan/">Stundenplan</a></li>
         <li><a href="https://gist.github.com/Moritz-Tim-Widmann/385b86a6630fe6dbc4b661dc01c35ed3">Kalender</a></li>
+        <li id="jsOut"></li>
+        <script type="text/javascript">
+            /** Returns this year, month, day with the specified hours and minutes. */
+            function time(hours, minutes) {
+                return new Date().setHours(hours, minutes)
+            }
+
+            /** An array of arrays of dates, representing the start and end of each break */
+            const breaks = [
+                time(08,45),
+                time(09,40),
+                time(10,35),
+                time(11,35),
+                time(12,30),
+                time(13,20),
+                time(14,10),
+                time(15,05),
+                time(16,00),
+                time(16,55)
+            ]
+            
+            /** gets you the next break.
+             * @author https://stackoverflow.com/users/1048572/bergi
+            */
+            function getNextBreak(breaks) {
+                breaks.sort(function(a, b) {
+                    let distancea = Math.abs(new Date() - a);
+                    let distanceb = Math.abs(new Date() - b);
+                    return distancea - distanceb; // sort a before b when the distance is smaller
+                });
+                return breaks[0]
+            }
+            
+            
+            //stolen from w3schools
+            x = setInterval(function(){
+                let countDownDate = getNextBreak(breaks)
+
+                let now = new Date().getTime()
+                let distance = new Date(countDownDate - now)
+                
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+                let milliseconds = Math.floor((distance % 60))
+
+                let countDown = hours + ":" + minutes + ":" + seconds + ":" + milliseconds
+
+                document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown
+
+
+            }, 1)
+
+
+            
+            
+
+        </script>
+        
     </ul>
 </body>
 </html>
