@@ -55,6 +55,7 @@
             
             x = setInterval(function(){
                 let countDownDate = getNextBreak(breaks)
+                console.log("next break:",niceDate(countDownDate))
 
                 let now = new Date().getTime()
                 let distance = new Date(countDownDate - now)
