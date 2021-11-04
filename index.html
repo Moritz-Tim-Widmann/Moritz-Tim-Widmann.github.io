@@ -34,6 +34,11 @@
                 time(16,00),
                 time(16,55)
             ]
+
+            function niceDate(date){
+                let d = new Date(date)
+                return d.getDate()+"."+d.getMonth()+"."+d.getFullYear()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
+            }
             
             /** gets you the next break.
              * @author https://stackoverflow.com/users/1048572/bergi
@@ -55,17 +60,18 @@
                 let now = new Date().getTime()
                 let distance = new Date(countDownDate - now)
                 
-                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+/*                 let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000)
                 let milliseconds = Math.floor((distance % 60))
 
                 let countDown = hours + ":" + minutes + ":" + seconds + ":" + milliseconds
-
+                document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown */
+                let countDown = distance.getHours() + ":" + distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
                 document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown
 
 
-            }, 1)
+            }, 1000)
 
 
             
