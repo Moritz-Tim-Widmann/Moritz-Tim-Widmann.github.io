@@ -14,7 +14,7 @@
         <li><a href="https://imsnoten.ch/">Notenportal von Eddie</a></li>
         <li><a href="/Stundenplan/">Stundenplan</a></li>
         <li><a href="https://gist.github.com/Moritz-Tim-Widmann/385b86a6630fe6dbc4b661dc01c35ed3">Kalender</a></li>
-        <li id="jsOut"></li>
+        <!--<li id="jsOut"></li>
         <script type="text/javascript">
             /** Returns this year, month, day with the specified hours and minutes. */
             function time(hours, minutes) {
@@ -55,15 +55,16 @@
             
             x = setInterval(function(){
                 let countDownDate = getNextBreak(breaks)
+                console.log()
                 console.log("next break:",niceDate(countDownDate))
 
                 let now = new Date().getTime()
                 let distance = new Date(countDownDate - now)
                 
-/*                 let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+/*              let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-                let milliseconds = Math.floor((distance % 60))
+                let milliseconds = Math.floor((distance % 1000))
 
                 let countDown = hours + ":" + minutes + ":" + seconds + ":" + milliseconds
                 document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown */
@@ -78,7 +79,7 @@
             
             
 
-        </script>
+        </script>!-->
         <li><a href="https://github.com/ims-informatikmittelschule-basel">GitHub</li>
         
     </ul>
