@@ -61,8 +61,8 @@
 
                 let now = new Date().getTime()
                 let distance = new Date(countDownDate - now)
-                
-                let countDown = distance.getHours() + ":" + distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
+
+                let countDown = distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
                 document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown
                 console.log("full countdown:", niceDate(distance))
 
