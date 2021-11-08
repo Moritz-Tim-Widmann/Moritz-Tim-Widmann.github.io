@@ -14,7 +14,7 @@
         <li><a href="https://imsnoten.ch/">Notenportal von Eddie</a></li>
         <li><a href="/Stundenplan/">Stundenplan</a></li>
         <li><a href="https://gist.github.com/Moritz-Tim-Widmann/385b86a6630fe6dbc4b661dc01c35ed3">Kalender</a></li>
-        <!--<li id="jsOut"></li>
+        <li id="jsOut"></li>
         <script type="text/javascript">
             /** Returns this year, month, day with the specified hours and minutes. */
             function time(hours, minutes) {
@@ -49,7 +49,8 @@
                     let distanceb = Math.abs(new Date() - b);
                     return distancea - distanceb; // sort a before b when the distance is smaller
                 });
-                return breaks[0]
+                let nextDates = breaks.filter(function(d) {return d - new Date() > 0})
+                return nextDates[0]
             }
             
             
@@ -79,7 +80,7 @@
             
             
 
-        </script>!-->
+        </script>
         <li><a href="https://github.com/ims-informatikmittelschule-basel">IMS GitHub</li>
         
     </ul>
