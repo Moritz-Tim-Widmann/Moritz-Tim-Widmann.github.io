@@ -10,11 +10,20 @@
 <body>
     <h1>Stundenplan</h1>
     <h2>Die Website ist noch in arbeit. Bitte Probleme/Vorschläge auf <a href="https://github.com/Moritz-Tim-Widmann/infms.me/issues/new">GitHub</a></h2>
-    <form action="I2a/Stundenplan%20J.pdf">
-        <input list="classes" name="class"><label>Klasse</label>
+
+    <script type="text/javascript">
+        function redirect(){
+            document.classSelection.action = "src/"+document.classSelection.class.value+".pdf"
+        }
+    </script>
+    <form name="classSelection" onsubmit="return redirect()">
+        <label>Klasse auswählen: </label>
+        <br/>
+        <input list="classes" name="class">
             <datalist id="classes">
                 <script type="text/javascript" src="../js/ClassList.js"></script>
             </datalist>
+        <input type="submit" name="submit" value="ok">
     </form>
 </body>
 </html>
