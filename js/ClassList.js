@@ -37,9 +37,6 @@ for (let j = 1; j <= 3; j++) {
 options.forEach(option =>{
     let classes= document.getElementById("classes")
     classes.appendChild(
-        new Option(option.relative, option.absolute)
-    )
-    classes.appendChild(
-        new Option(option.absolute, option.absolute)
+        new Option(option.relative+" / "+option.absolute, option.absolute)
     )
 })
