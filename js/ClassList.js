@@ -16,10 +16,20 @@ function getOptions(relativePrefix, absolutePrefix) {
     return options
 }
 
+function getSchoolYear(date) {
+    year = date.getFullYear()
+    month = date.getMonth()+1
+
+    if(month < 8){
+        year--
+    }
+    return year
+}
+
 for (let j = 1; j <= 3; j++) {
     
     /** the year we are in now */
-    let thisYear = new Date().getFullYear()
+    let thisYear = getSchoolYear(new Date())
     /** the last 2 digits of the year we are in now */
     let thisYearShort = parseInt(thisYear.toString().substr(-2))
     /** the last 2 digits of the year I_a got into the ims*/
