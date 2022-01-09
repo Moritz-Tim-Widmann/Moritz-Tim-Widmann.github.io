@@ -13,10 +13,12 @@
 
     <script type="text/javascript">
         function redirect(){
-            document.classSelection.action = "Klassen/"+document.classSelection.class.value+".pdf"
+            url = "Klassen/"+document.forms["classSelection"]["classes"].value+".pdf"
+            window.location.href = url;
+            return false;
         }
     </script>
-    <form name="classSelection" onsubmit="return redirect()">
+    <form id="classSelection" onsubmit="return redirect()">
         <label for="classes">Klasse auswählen: </label>
         <br/>
         <select id="classes"></select>
