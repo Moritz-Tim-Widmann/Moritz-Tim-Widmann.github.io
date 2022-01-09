@@ -11,13 +11,7 @@
     <h1>Stundenplan</h1>
     <h2>Die Website ist noch in arbeit. Bitte Probleme/Vorschläge auf <a href="https://github.com/Moritz-Tim-Widmann/ims-portal/issues/new">GitHub</a></h2>
 
-    <script type="text/javascript">
-        function redirect(){
-            url = "Klassen/"+document.forms["classSelection"]["classes"].value+".pdf"
-            window.location.href = url;
-            return false;
-        }
-    </script>
+    <script type="text/javascript" src="../js/Redirect.js"></script>
     <form id="classSelection" onsubmit="return redirect()">
         <label for="classes">Klasse auswählen: </label>
         <br/>
