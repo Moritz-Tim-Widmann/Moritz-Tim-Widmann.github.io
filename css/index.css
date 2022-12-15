@@ -1,4 +1,76 @@
-body
-{
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #292929;
+	color: #f1f1f1;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.25em 0;
+}
+
+div {
+	padding: 0.5em 1em;
+}
+
+#jsOut {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 1em;
+	width: fit-content;
+}
+
+div {
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+main {
+	width: fit-content;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+a {
+	color: #fff;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttons>div {
+	margin: 0.5em;
+	padding: 0.5em 1em;
+	border-radius: 0.25em;
+	box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+	transition: all 0.2s;
+	color: rgb(226, 226, 226);
+	background-color: #154446;
+}
+
+
+.big-button {
+	grid-column: 1 / -1;
+}
+
+.buttons>div>a {
+	text-decoration: none;
+}
+
+.button a:hover {
+	background-color: #0b87d2;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+	transform: translateY(-0.25em);
+}
+
+
+footer {
+	margin-top: 2em;
+	font-size: 0.75em;
 }
