@@ -3,7 +3,11 @@
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	text-align: center;
 	background-color: hsl(var(--theme), 6%, 16%);
-	color: #f1f1f1;
+	color: hsl(var(--theme), 6%, 85%);
+	text-shadow:
+		.5px .5px, .5px hsl(var(--theme), 6%, 0%),
+		0 0 25px hsl(var(--theme), 6%, 0%),
+		0 0 5px hsl(var(--theme), 6%, 0%);
 	font-size: 1.25em;
 }
 
