@@ -42,7 +42,7 @@ x = setInterval(function () {
 	let now = new Date().getTime()
 	let distance = new Date(countDownDate - now)
 
-	let countDown = distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
+	let countDown = distance.getMinutes().toString().padStart(2, '0') + ":" + distance.getSeconds().toString().padStart(2, '0') + ":" + distance.getMilliseconds().toString().padStart(3, '0')
 	document.getElementById("jsOut").innerHTML = "Nächste Pause in: " + countDown
 
 }, 20)
