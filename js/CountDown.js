@@ -36,17 +36,12 @@ function getNextBreak(breaks) {
 }
 
 //stolen from w3schools
-x = setInterval(function(){
-    let countDownDate = getNextBreak(breaks)
-    console.log()
-    console.log("next break:",niceDate(countDownDate))
+x = setInterval(function () {
+	let countDownDate = getNextBreak(breaks)
+	let now = new Date().getTime()
+	let distance = new Date(countDownDate - now)
 
-    let now = new Date().getTime()
-    let distance = new Date(countDownDate - now)
-
-    let countDown = distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
-    document.getElementById("jsOut").innerHTML = "Nächste Pause in: "+countDown
-    console.log("full countdown:", niceDate(distance))
-
+	let countDown = distance.getMinutes() + ":" + distance.getSeconds() + ":" + distance.getMilliseconds()
+	document.getElementById("jsOut").innerHTML = "Nächste Pause in: " + countDown
 
 }, 20)
