@@ -48,3 +48,7 @@ x = setInterval(function () {
 	document.getElementById("jsOut").innerHTML = "Nächste Pause in: " + jsOut
 
 }, 20)
+
+document.addEventListener("DOMContentLoaded", function () {
+	document.getElementById('jsOut').removeAttribute('title');
+})
