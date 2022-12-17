@@ -52,7 +52,7 @@ a {
 	align-items: center;
 }
 
-.buttons>div {
+.button {
 	margin: .5rem;
 	padding: 1.5rem;
 	font-size: 1.25rem;
@@ -68,14 +68,43 @@ a {
 	grid-column: 1 / -1;
 }
 
-.buttons>div>a {
+.button>a {
 	text-decoration: none;
 }
 
-.buttons>div:hover {
+.button:hover {
 	background-color: hsl(var(--theme), 90%, 38%);
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
 	transform: translateY(-.25rem);
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+form label {
+	grid-column: 1 / -1;
+}
+
+select {
+	margin: .5rem;
+	padding: 1.5rem;
+	font-size: 1.25rem;
+	border-radius: .25rem;
+	border: none;
+	box-shadow: 0 0 .25rem rgba(0, 0, 0, .25);
+	transition: all .2s;
+	color: rgb(226, 226, 226);
+	background-color: hsl(var(--theme), 20%, 20%);
+	appearance: none;
+}
+
+form input[type="submit"] {
+	border: none;
 }
 
 
