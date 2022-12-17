@@ -1,8 +1,5 @@
 :root {
 	--theme: 200;
-}
-
-body {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	text-align: center;
 	background-color: hsl(var(--theme), 6%, 16%);
