@@ -44,8 +44,11 @@ x = setInterval(function () {
 
 	let title = distance.getMinutes().toString().padStart(2, '0') + ":" + distance.getSeconds().toString().padStart(2, '0')
 	let jsOut = title + ":" + distance.getMilliseconds().toString().padStart(3, '0')
-	let e = document.getElementById("jsOut")
-	e ? e.innerHTML = title : null;
+	// set title or not if ther is no title
+	let e = document.getElementById("breakTitle")
+	if (e) {
+		e.innerHTML = title
+	}
 	document.getElementById("jsOut").innerHTML = "Nächste Pause in: " + jsOut
 
 }, 20)
