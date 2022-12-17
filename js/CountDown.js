@@ -14,7 +14,8 @@ const breaks = [
 	time(14, 10),
 	time(15, 05),
 	time(16, 00),
-	time(16, 55)
+	time(16, 55),
+	time(17, 45)
 ]
 
 function niceDate(date) {
