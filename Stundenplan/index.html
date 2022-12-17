@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="../css/index.css" rel="stylesheet">
-	 <script src="../js/Style.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stundenplan</title>
-</head>
-<body>
-    <h1>Stundenplan</h1>
-    <h2>Die Website ist noch in Arbeit. Bitte Probleme/Vorschläge auf <a href="https://github.com/Moritz-Tim-Widmann/ims-portal/issues/new">GitHub</a></h2>
 
-    <script type="text/javascript" src="../js/Redirect.js"></script>
-    <form id="classSelection" onsubmit="return redirect('pdf')">
-        <label for="classes">Klasse auswählen: </label>
-        <br/>
-        <select id="classes"></select>
-            <datalist id="classes">
-                <script type="text/javascript" src="../js/ClassList.js"></script>
-            </datalist>
-        <input type="submit" name="submit" value="ok">
-    </form>
+<head>
+	<link href="../css/index.css" rel="stylesheet">
+	<script src="../js/Style.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stundenplan</title>
+</head>
+
+<body>
+	<h1>Stundenplan</h1>
+	<h2>Die Website ist noch in Arbeit. Bitte Probleme/Vorschläge auf <a
+			href="https://github.com/Moritz-Tim-Widmann/ims-portal/issues/new">GitHub</a></h2>
+
+	<script type="text/javascript" src="../js/Redirect.js"></script>
+	<form id="classSelection" onsubmit="return redirect('pdf')">
+		<label for="classes">Klasse auswählen: </label>
+		<br />
+		<select id="classes"></select>
+		<datalist id="classes">
+			<script type="text/javascript" src="../js/ClassList.js"></script>
+		</datalist>
+		<input type="submit" name="submit" value="ok">
+	</form>
 </body>
+
 </html>
