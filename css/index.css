@@ -1,7 +1,11 @@
+:root {
+	--theme: 200;
+}
+
 body {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	text-align: center;
-	background-color: #292929;
+	background-color: hsl(var(--theme), 6%, 16%);
 	color: #f1f1f1;
 }
 
@@ -51,7 +55,7 @@ a {
 	box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
 	transition: all 0.2s;
 	color: rgb(226, 226, 226);
-	background-color: #154446;
+	background-color: hsl(var(--theme), 20%, 20%);
 }
 
 
