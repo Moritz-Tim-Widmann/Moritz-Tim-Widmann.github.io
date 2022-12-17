@@ -11,20 +11,27 @@
 </head>
 
 <body>
-	<h1>Stundenplan</h1>
-	<h2>Die Website ist noch in Arbeit. Bitte Probleme/Vorschläge auf <a
-			href="https://github.com/Moritz-Tim-Widmann/ims-portal/issues/new">GitHub</a></h2>
+	<header>
+		<h1>Stundenplan</h1>
+	</header>
 
-	<script type="text/javascript" src="../js/Redirect.js"></script>
-	<form id="classSelection" onsubmit="return redirect('pdf')">
-		<label for="classes">Klasse auswählen: </label>
-		<br />
-		<select id="classes"></select>
-		<datalist id="classes">
-			<script type="text/javascript" src="../js/ClassList.js"></script>
-		</datalist>
-		<input type="submit" name="submit" value="ok">
-	</form>
+	<main>
+		<script type="text/javascript" src="../js/Redirect.js"></script>
+		<form id="classSelection" onsubmit="return redirect('pdf')">
+			<label for="classes">Klasse auswählen: </label>
+			<br />
+			<select id="classes"></select>
+			<datalist id="classes">
+				<script type="text/javascript" src="../js/ClassList.js"></script>
+			</datalist>
+			<input type="submit" name="submit" value="ok">
+		</form>
+	</main>
+
+	<footer>
+		<p><em>Die Website ist noch in Arbeit. Bitte Probleme/Vorschläge auf <a
+					href="https://github.com/Moritz-Tim-Widmann/ims-portal/issues/new">GitHub</a></em></p>
+	</footer>
 </body>
 
 </html>
