@@ -1,6 +1,6 @@
 let options = []
 const CLASSES_PER_YEAR = 2
-const CLASSES = "abcdefghijklmnopqrstuvwxyz".substr(0,CLASSES_PER_YEAR).split("")
+const CLASSES = "abcdefghijklmnopqrstuvwxyz".substring(0,CLASSES_PER_YEAR).split("")
 
 /** returns an array of option objects */
 function getOptions(relativePrefix, absolutePrefix) {
@@ -31,7 +31,7 @@ for (let j = 1; j <= 3; j++) {
     /** the year we are in now */
     let thisYear = getSchoolYear(new Date())
     /** the last 2 digits of the year we are in now */
-    let thisYearShort = parseInt(thisYear.toString().substr(-2))
+    let thisYearShort = parseInt(thisYear.toString().substring(-2))
     /** the last 2 digits of the year I_a got into the ims*/
     let absoluteYear = thisYearShort - j + 1
 
