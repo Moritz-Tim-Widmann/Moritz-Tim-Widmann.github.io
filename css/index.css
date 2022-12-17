@@ -18,7 +18,7 @@ h1 {
 
 div,
 nav {
-	padding: 0.5rem 1rem;
+	padding: .5rem 1rem;
 }
 
 #jsOut {
@@ -52,12 +52,12 @@ a {
 }
 
 .buttons>div {
-	margin: 0.5rem;
+	margin: .5rem;
 	padding: 1.5rem;
 	font-size: 1.25rem;
-	border-radius: 0.25rem;
-	box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
-	transition: all 0.2s;
+	border-radius: .25rem;
+	box-shadow: 0 0 .25rem rgba(0, 0, 0, .25);
+	transition: all .2s;
 	color: rgb(226, 226, 226);
 	background-color: hsl(var(--theme), 20%, 20%);
 }
@@ -73,8 +73,8 @@ a {
 
 .button a:hover {
 	background-color: #0b87d2;
-	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-	transform: translateY(-0.25rem);
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+	transform: translateY(-.25rem);
 }
 
 
@@ -84,5 +84,5 @@ footer {
 	bottom: 0;
 	background-color: hsl(var(--theme), 25%, 16%);
 	margin-top: 2rem;
-	font-size: 0.8rem;
+	font-size: .8rem;
 }
