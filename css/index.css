@@ -72,8 +72,8 @@ a {
 	text-decoration: none;
 }
 
-.button a:hover {
-	background-color: #0b87d2;
+.buttons>div:hover {
+	background-color: hsl(var(--theme), 90%, 38%);
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
 	transform: translateY(-.25rem);
 }
