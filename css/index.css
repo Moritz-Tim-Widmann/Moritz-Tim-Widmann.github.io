@@ -10,25 +10,25 @@ body {
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.25em 0;
+	font-size: 2rem;
+	margin: 0.25rem 0;
 }
 
 div,
 nav {
-	padding: 0.5em 1em;
+	padding: 0.5rem 1rem;
 }
 
 #jsOut {
 	font-weight: bold;
-	font-size: 1.5em;
-	margin-top: 1em;
+	font-size: 1.5rem;
+	margin-top: 1rem;
 	width: fit-content;
 }
 
 div {
 	margin: auto;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 main {
@@ -50,10 +50,10 @@ a {
 }
 
 .buttons>div {
-	margin: 0.5em;
-	padding: 0.5em 1em;
-	border-radius: 0.25em;
-	box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
 	transition: all 0.2s;
 	color: rgb(226, 226, 226);
 	background-color: hsl(var(--theme), 20%, 20%);
@@ -70,8 +70,8 @@ a {
 
 .button a:hover {
 	background-color: #0b87d2;
-	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-	transform: translateY(-0.25em);
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+	transform: translateY(-0.25rem);
 }
 
 
@@ -80,6 +80,6 @@ footer {
 	width: 100%;
 	bottom: 0;
 	background-color: hsl(var(--theme), 25%, 16%);
-	margin-top: 2em;
-	font-size: 0.75em;
+	margin-top: 2rem;
+	font-size: 0.75rem;
 }
