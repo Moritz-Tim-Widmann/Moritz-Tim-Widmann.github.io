@@ -2,13 +2,18 @@
 	--theme: 200;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	text-align: center;
-	background-color: hsl(var(--theme), 6%, 16%);
 	color: hsl(var(--theme), 6%, 85%);
 	text-shadow:
 		.5px .5px, .5px hsl(var(--theme), 6%, 0%),
 		0 0 25px hsl(var(--theme), 6%, 0%),
 		0 0 5px hsl(var(--theme), 6%, 0%);
 	font-size: 1.25em;
+}
+
+body {
+	background-image: linear-gradient(135deg, hsl(var(--theme), 6%, 20%), hsl(var(--theme), 6%, 30%));
+	height: 100vh;
+	overflow: hidden;
 }
 
 h1 {
@@ -115,4 +120,5 @@ footer {
 	background: hsla(0, 0%, 40%, .1);
 	margin-top: 2rem;
 	font-size: .8rem;
+	right: 0;
 }
